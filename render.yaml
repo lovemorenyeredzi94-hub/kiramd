@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: kira-md
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PREFIX
+        value: "."
+      - key: OWNER_NUMBER
+        value: "923237045919"
+      - key: OWNER_NAME
+        value: "ArslanMD Official"
+      - key: MODE
+        value: "public"
